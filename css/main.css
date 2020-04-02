@@ -1,0 +1,274 @@
+h1, h2, h3, h4, label {
+    font-family: 'Teko', Impact, sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p, a, input {
+    text-decoration: none;
+    font-family: 'Oswald', "Roboto", sans-serif;
+}
+
+p {
+    font-size: 22px;
+}
+
+a {
+    color: blue;
+}
+
+#indexP {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#indexP p {
+    margin-top: 30px;
+}
+
+#inPO {
+    display: flex;
+    flex-direction: column;
+}
+
+#inPO a {
+    margin-top: 10px;
+}
+
+#inPO a:nth-of-type(2):hover {
+    -webkit-animation: rainbow 5s infinite; 
+    animation: rainbow 5s infinite; 
+    transition: all ease 0.5s;
+}
+
+@-webkit-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+      20%{color: red;}
+    30%{color: CadetBlue;}
+      40%{color: yellow;}
+    50%{color: coral;}
+      60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+      100%{color: orange;}
+  }
+@keyframes rainbow{
+    0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+  30%{color: CadetBlue;}
+	40%{color: yellow;}
+  50%{color: coral;}
+	60%{color: green;}
+  70%{color: cyan;}
+  80%{color: DeepPink;}
+  90%{color: DodgerBlue;}
+	100%{color: orange;}
+}
+
+.actions {
+    text-align: center;
+    color: blue;
+    -webkit-animation: fadeout 7s; 
+    animation: fadeout 7s; 
+    transition: all ease 0.5s;
+    animation-fill-mode: forwards;  
+}
+
+@-webkit-keyframes fadeout{
+    0%{opacity: 1;}	
+    100%{opacity: 0;}
+  }
+@keyframes fadeout{
+    0%{opacity: 1;}
+	100%{opacity: 0;}
+}
+
+.forms {
+    text-align: center;
+    border: blue 2px solid;
+    padding: 20px;
+    margin: 30px;
+}
+
+.forms h2 {
+    font-size: 30px;
+}
+
+.forms input {
+    border: 1px #000 solid;
+}
+
+.forms form button {
+    border: blue solid 1px;
+    border-radius: 5px;
+    background-color: #fff;
+    margin-right: -90px;
+    margin-top: 30px;
+}
+
+.forms .row {
+    margin-top: 20px;
+}
+
+.forms .static {
+    margin-top: 20px;
+}
+
+header {
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 10px 5px 20px;
+}
+
+header a {
+    margin-top: 7px;
+}
+
+#dashP {
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#dashP h3 {
+    font-size: 28px;
+}
+
+#dashP a {
+    margin-left: 0 auto;
+}
+
+#dashP .users-list {
+    margin-top: 50px;
+}
+
+#dashP .users-list p {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+#dashP h4 {
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#topSec {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: lightgray;
+    flex-wrap: wrap;
+}
+
+#topSec div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#topSec h3 {
+    font-family: 'Teko', Impact, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#deleteTable {
+    border: blue 2px solid;
+    padding: 5%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#deleteTable h2 {
+    text-align: center;
+}
+
+#deleteTable p{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#deleteTable table thead tr th{
+    font-family: 'Teko', Impact, sans-serif;
+    width: 20%;
+}
+
+#deleteTable table tbody tr td {
+    font-family: 'Oswald', "Roboto", sans-serif;
+    text-align: center;
+}
+
+.mNo {
+    display: none;
+}
+
+#deleteTable h2 {
+    font-size: 30px;
+}
+
+@media screen and (min-width: 420px) {
+    .forms {
+        width: 316px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mNo {
+        display: flex;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header h1 {
+        font-size: 45px;
+    }
+    header a {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    #topSec {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: lightgray;
+        flex-wrap: wrap;
+    }
+    #topSec div {
+        width: 60%;
+        justify-content: space-around;
+    }
+    #topSec h3 {
+        width: 40%;
+        margin-bottom: 0px;
+    }
+    #deleteTable {
+        width: 70%;
+    }
+    #deleteTable table thead tr th{
+        font-family: 'Teko', Impact, sans-serif;
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #deleteTable {
+        width: 50%;
+    }
+}
