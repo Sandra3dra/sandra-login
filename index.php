@@ -1,3 +1,10 @@
+<?php
+
+    require_once 'load.php';
+    redirect_to("./admin/admin_login.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
