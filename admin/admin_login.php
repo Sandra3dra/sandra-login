@@ -5,6 +5,10 @@
     $ip = $_SERVER['REMOTE_ADDR'];
     $reqtime = date("Y-m-d H:i:s");
 
+    if(!empty($_SESSION['user_name'])) {
+        redirect_to("index.php");
+    }
+
     if(isset($_POST['submit'])) {
         $username = trim($_POST['username']);
         $password = trim($_POST['password']);
