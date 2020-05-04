@@ -1,13 +1,16 @@
-# sandra-login
+# Sandra's login page
 
 Just a little website for login and user functionalities.
+
+## Login Credentials
+* **Username:** sandra
+* **Password:** sandy
 
 ## Built with
 * **HTML5**
 * **CSS3**
 * **PHP**
 * **MySQL**
-
 
 ## Packages to Install (Developers)
 
